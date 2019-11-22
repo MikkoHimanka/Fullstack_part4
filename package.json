@@ -6,7 +6,8 @@
   "scripts": {
     "deploy": "git push heroku master",
     "logs:prod": "heroku logs --tail",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "jest --verbose"
   },
   "author": "Mikko Himanka",
   "license": "MIT",
@@ -19,6 +20,10 @@
   },
   "proxy": "http://localhost:3001",
   "devDependencies": {
-    "eslint": "^6.6.0"
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
